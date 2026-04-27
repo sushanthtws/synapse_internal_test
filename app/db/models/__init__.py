@@ -1,0 +1,1 @@
+from app.db.models.vote_model import Vote

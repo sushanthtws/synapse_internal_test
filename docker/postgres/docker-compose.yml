@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: skill_repo_db
+    restart: always
+    environment:
+      POSTGRES_USER: skill_user
+      POSTGRES_PASSWORD: skill_pass
+      POSTGRES_DB: skill_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - skill_data:/var/lib/postgresql/data
+
+volumes:
+  skill_data:
