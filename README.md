@@ -15,6 +15,7 @@ Each “skill” becomes a standardized reusable knowledge module.
 ---
 
 # 🏗️ Architecture Overview
+```bash
 Streamlit UI (Frontend)
 │
 ▼
@@ -37,11 +38,12 @@ PostgreSQL Database
 ├── tags
 ├── skill_tags
 
-
+```
 ---
 
 # 📂 Project Structure
 
+```bash 
 skill_repo/
 │
 ├── app/
@@ -70,12 +72,12 @@ skill_repo/
 │
 ├── scripts/
 │ └── init_db.py
-│
+│ └── reset_db.py
+| └── run_ingestion.py
 ├── tests/
 ├── requirements.txt
 └── README.md
-
-
+```
 ---
 
 # ⚙️ Core Components
